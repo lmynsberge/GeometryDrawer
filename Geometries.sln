@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LJM.Geometries.Core", "Core\LJM.Geometries.Core.csproj", "{5C112489-5B67-4523-B118-141CBDDFF7A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LJM.Geometries.Core.UnitTests", "LJM.Geometries.Core.UnitTests\LJM.Geometries.Core.UnitTests.csproj", "{016DFF68-A75E-4879-996E-C39BDE3377D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LJM.Geometries.Drawing", "LJM.Geometries.Drawing\LJM.Geometries.Drawing.csproj", "{547EAEB3-66C3-4EDD-AF0A-23CA04C26B43}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C112489-5B67-4523-B118-141CBDDFF7A0} = {5C112489-5B67-4523-B118-141CBDDFF7A0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LJM.Geometries.Services", "LJM.Geometries.Services\LJM.Geometries.Services.csproj", "{452BC8F0-A5E9-45B1-8AA9-32D146EDB9D6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C112489-5B67-4523-B118-141CBDDFF7A0} = {5C112489-5B67-4523-B118-141CBDDFF7A0}
+		{547EAEB3-66C3-4EDD-AF0A-23CA04C26B43} = {547EAEB3-66C3-4EDD-AF0A-23CA04C26B43}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C112489-5B67-4523-B118-141CBDDFF7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C112489-5B67-4523-B118-141CBDDFF7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C112489-5B67-4523-B118-141CBDDFF7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C112489-5B67-4523-B118-141CBDDFF7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{016DFF68-A75E-4879-996E-C39BDE3377D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{016DFF68-A75E-4879-996E-C39BDE3377D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{016DFF68-A75E-4879-996E-C39BDE3377D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{016DFF68-A75E-4879-996E-C39BDE3377D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{547EAEB3-66C3-4EDD-AF0A-23CA04C26B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547EAEB3-66C3-4EDD-AF0A-23CA04C26B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547EAEB3-66C3-4EDD-AF0A-23CA04C26B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547EAEB3-66C3-4EDD-AF0A-23CA04C26B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{452BC8F0-A5E9-45B1-8AA9-32D146EDB9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452BC8F0-A5E9-45B1-8AA9-32D146EDB9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452BC8F0-A5E9-45B1-8AA9-32D146EDB9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452BC8F0-A5E9-45B1-8AA9-32D146EDB9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
